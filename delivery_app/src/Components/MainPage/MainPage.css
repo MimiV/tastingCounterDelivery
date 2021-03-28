@@ -1,0 +1,24 @@
+.HomePageInnerGrid{
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top:20px;
+}
+
+@media screen and (max-width: 991px) {
+    .HomePageInnerGrid{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .HomePageInnerGrid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }
+      
+
