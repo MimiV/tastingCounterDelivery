@@ -9,7 +9,7 @@ Application will be used for Tasting Counter @Home and Tasting Counter Market de
 
 <img src="img/customerInfo1.jpg" width="200" height="350">
 
-<img src="img/mock.JPG" width="550" height="400">
+<img src="img/mock.JPG" width="600" height="450">
                                                        
 <img src="img/startingIdea.jpg" width="250" height="350">
 
