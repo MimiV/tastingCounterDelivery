@@ -13,11 +13,9 @@ const useStyles = makeStyles({
     table: {
       minWidth: 100,
       width:400,
-      margin:"auto",
       align:"center",
       marginBottom:"40px",
-      backgroundColor: "rgba(0, 0, 0, 0.1)",
-      backgroundOpacity: 0.8,
+      backgroundColor: "rgba(255, 99, 71, 0)",
     },
     tableCell:{
         fontSize:16,
@@ -34,8 +32,10 @@ function CustomerInfo({
 }) {
     const classes = useStyles();
     return (
-        <div className="Customer_info_container">        
-          <TableContainer>
+        <div className="Customer_info_container">    
+       
+          <TableContainer> 
+          <hr className="__colorgraph"></hr>    
             <Table className={classes.table}>
               <TableHead>
                 <TableRow hover

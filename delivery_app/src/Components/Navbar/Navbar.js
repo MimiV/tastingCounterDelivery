@@ -1,12 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {MdFingerprint} from 'react-icons/md'
 import {FaBars,FaTimes} from 'react-icons/fa'
-import { Button } from '../Button/Button';
 import './Navbar.css';
 import tastingCounter_logo from "../../images/tastingCounter11.png";
 import {IconContext} from 'react-icons/lib'
-import tastingCounter from "../../images/1.jpg";
+import tastingCounter from "../../images/11.png";
+import Button from '@material-ui/core/Button';
 
 function Navbar() {
     const [click,setClick] = useState(false);
@@ -36,9 +35,9 @@ function Navbar() {
                 <div className="navbar-container container">
                 <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                     <div className = "tastingCounter-logo" >
-                    <img  src={tastingCounter_logo} width = "80 px" ></img> 
+                    <img  src={tastingCounter_logo} width = "80 px" style={{marginTop:"8px"}} ></img> 
                     </div>
-                    <img src={tastingCounter} width = "200 px"  heigth= "100px"></img>
+                     <img src={tastingCounter} width = "200 px"  heigth= "100px" style={{marginTop:"8px",marginRight:"160px"}}></img>
                   
                 </Link>
                 <div className = "menu-icon" onClick={handleClick}>
@@ -47,7 +46,7 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                    <li className="nav-item">
                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>
-                           Home
+                         Home
                        </Link>
                    </li>
                    <li className="nav-item">
@@ -63,11 +62,12 @@ function Navbar() {
                    <li className="nav-btn">
                        {button ? (
                            <Link to='/sign-up' className ="btn-link" >
-                               <Button buttonStyle='btn--outline'>Log Out</Button>
+                               <Button className="btn--outline">Log Out</Button>
                             </Link>
                        ):(
                            <Link  to='/sign-up'className="btn-link" onClick={closeMobileMenu}>
-                               <Button buttonStyle='btn--outline' buttonSize ='btn--mobile'>Log Out</Button>
+                               <Button className="btn--outline" >Log Out</Button>
+                               {/* <Button className="btn--outline" buttonSize ='btn--mobile'>Log Out</Button> */}
                            </Link>
                        )}
                    </li>

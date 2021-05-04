@@ -1,5 +1,5 @@
 .navbar {
-    background: #000000;
+    background: #001628 ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,6 +8,8 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    margin-right: -300px;
+    width: 100%;
   }
   
   .tastingCounter-logo{
@@ -20,7 +22,7 @@
     z-index: 999;
     margin-right: -20px;
     margin-left: -60px;
-  
+    /* margin-top:10px; */
   }
 
   .navbar-container {
@@ -32,7 +34,7 @@
   .container {
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin-right: auto;
     margin-left: auto;
     padding-right: 50px;
@@ -91,6 +93,10 @@
   }
   
   @media screen and (max-width: 960px) {
+    body{
+      margin:0;
+      padding:0;
+    }
     .NavbarItems {
       position: relative;
     }
